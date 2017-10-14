@@ -1,4 +1,4 @@
-{
+var imageData = {
   "objects": [{
     "id": "cleaning-blob",
     "img": "../cleaning.png",
