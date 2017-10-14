@@ -1,24 +1,28 @@
 var imageData = {
-  "objects": [{
+  "targets": [{
     "id": "adult",
-    "img": "../adult.png",
+    "img": "assets/adult.png",
   },
   {
     "id": "bank",
-    "img": "../bank.png"
+    "img": "assets/bank.png"
   },
   {
     "id": "clean",
-    "img": "../clean.png"
+    "img": "assets/clean.png"
   },
   {
     "id": "email",
-    "img": "../email.png"
+    "img": "assets/email.png"
   },{
     "id": "grocery",
-    "img": "../grocery.png"
-  },{
-    "id": "meme",
-    "img": "../meme.png"
-  }]
+    "img": "assets/grocery.png"
+  }],
+
+  "final":[{
+    "id": "final",
+    "img": "assets/img"
+  }
+
+  ]
 }
