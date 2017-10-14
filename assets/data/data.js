@@ -1,4 +1,4 @@
-{
+var imageData = {
   "objects": [{
     "id": "adult",
     "img": "../adult.png",
