@@ -3,6 +3,7 @@
 // - Make initial elements not overlapped, or just manually place them... in a nicer config
 // - Animate elements?
 // - Add broom as cursor
+// - Add character as rpg character person
 
 // ---------------------
 
