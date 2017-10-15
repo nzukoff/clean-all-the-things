@@ -16,10 +16,13 @@ var imageData = {
     "img": "assets/email.png"
   },{
     "id": "grocery",
-    "img": "../grocery.png"
-  },
-  {
-    "id": "meme",
-    "img": "../meme.png"
-  }]
+    "img": "assets/grocery.png"
+  }],
+
+  "final":[{
+    "id": "final",
+    "img": "assets/img"
+  }
+
+  ]
 }
