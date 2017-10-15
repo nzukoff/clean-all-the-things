@@ -1,7 +1,6 @@
 // Initiate all divs
 $(document).ready((e) => {
 
-//     console.log(data)
   imageData.targets.forEach((d) => {
     // Add divs with images for every object in the data file
     $('#bunch-o-divs').append(
