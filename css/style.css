@@ -3,9 +3,12 @@ body, html {
 }
 
 body {
+  cursor: url('../assets/broom.png');
   background-image: url('../assets/meme.png');
   background-size: 100%;
   background-position: bottom center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: orangered;
+  
 }
