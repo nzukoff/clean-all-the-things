@@ -3,11 +3,9 @@ body, html {
 }
 
 body {
-<<<<<<< Updated upstream
-  /*background-image: url('../assets/hypno.gif');*/
-=======
   background-image: url('../assets/meme.png');
->>>>>>> Stashed changes
   background-size: 100%;
+  background-position: bottom center;
   background-repeat: no-repeat;
+  background-color: orangered;
 }
