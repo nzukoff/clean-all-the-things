@@ -3,7 +3,11 @@ body, html {
 }
 
 body {
+<<<<<<< HEAD
   background-image: url('../assets/meme.png');
+=======
+  /*background-image: url('../assets/hypno.gif');*/
+>>>>>>> origin/master
   background-size: 100%;
   background-position: bottom center;
   background-repeat: no-repeat;
