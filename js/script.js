@@ -11,6 +11,42 @@
 var windowWidth = $( window ).width();
 var windowHeight = $( window ).height();
 
+
+function animate(filename) {
+  var app = new PIXI.Application();
+  document.body.appendChild(app.view);
+
+  //var app = new PIXI.PIXI.autoDetectRenderer(256,256);
+  //document.body.appendChild(app.view);
+
+  //PIXI.loader.add('Narasimha', 'objects[0].Narasimha_Vigraha.jpg').load(function(loader, resources) {
+  PIXI.loader.add('Narasimha', filename).load(function(loader, resources) {
+
+  // This creates a texture from a 'Narasimha.png' image
+  var Narasimha = new PIXI.Sprite(resources.Narasimha.texture);
+
+
+  // Setup the position of the Narasimha
+  Narasimha.x = app.renderer.width / 2;
+  Narasimha.y = app.renderer.height / 2;
+  console.log(Narasimha.x);
+
+  // Rotate around the center
+  Narasimha.anchor.x = 0.5;
+  Narasimha.anchor.y = 0.5;
+
+  // Add the Narasimha to the scene we are building.
+  app.stage.addChild(Narasimha);
+
+  // Listen for frame updates
+  app.ticker.add(function() {
+  // each frame we spin the Narasimha around a bit
+    Narasimha.rotation += 0.01;
+    });
+  });
+}
+
+
 // Function that splits 1 element into x smaller elements (children)
 function split(element) {
   // make original disappear
@@ -99,6 +135,9 @@ $(document).ready((e) => {
       split($(this));
     })
   })
+
+  animate('Narasimha_Vigraha.jpg');
+
 })
 
 
