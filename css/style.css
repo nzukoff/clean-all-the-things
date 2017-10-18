@@ -6,7 +6,7 @@ body {
 <<<<<<< HEAD
   background-color: orangered;
 =======
-  cursor: url('../assets/broom1.png'), pointer;
+  cursor: url('../assets/broom.png'), pointer;
 >>>>>>> origin/master
   background-image: url('../assets/meme.png');
   background-size: 100%;
@@ -16,6 +16,6 @@ body {
 <<<<<<< HEAD
 =======
   background-color: orangered;
-  
+
 >>>>>>> origin/master
 }
