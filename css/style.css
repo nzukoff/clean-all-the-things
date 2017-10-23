@@ -3,11 +3,18 @@ body, html {
 }
 
 body {
-  cursor: url('../assets/broom.png'), pointer;
+  cursor: url('../assets/broom1.png') 25 15, pointer;
   background-image: url('../assets/meme.png');
   background-size: 100%;
   background-position: bottom center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: orangered;
+}
+
+.magictime {
+  -webkit-animation-delay: 1s; /* Safari 4.0 - 8.0 */
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 1s;
 }

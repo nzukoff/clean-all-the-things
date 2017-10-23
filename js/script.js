@@ -28,12 +28,34 @@ function split(element) {
     // Scaling down size of children of split elements
     let scale = 0.7
 
+    // Select a random "in" animation 
+    let n = Math.random()
+    let c = ""
+    if (n < .12) {
+      c = "tinRightIn"
+    } else if (.12 < n <= .24) {
+      c = "puffIn"
+    } else if (.24 < n <= .36) {
+      c = "swashIn"
+    } else if (.36 < n <= .48) {
+      c = "spaceInLeft"
+    } else if (.48 < n <= .60) {
+      c = "twisterInDown"
+    } else if (.60 < n <= .72) {
+      c = "vanishIn"
+    } else if (.72 < n <= .84) {
+      c = "tinUpIn"
+    } else {
+      c = "foolishIn"
+    }
+
     // Add new children to main div
     //   - scales divs
     //   - declare image source, positions
+    //   - adds random animation
     $('#bunch-o-divs').append(
       `
-      <div class='child' id='${newID}' style='position:absolute'>
+      <div class='child magictime ${c}' id='${newID}' style='position:absolute'>
         <img src='${element[0].children[0].src}'
           width=${element[0].children[0].width*scale}
           height=${element[0].children[0].height*scale}>
